@@ -13,13 +13,13 @@
     var option = {
         title: {
             text: '河北省各城市空气质量排名',
-            subtext: '2018'
+            subtext: '2018',
+            textStyle: {
+                fontSize: 14
+            }
         },
         tooltip: {
             trigger: 'axis'
-        },
-        legend: {
-            data: ['综合指数']
         },
         toolbox: {
             show: true,
@@ -31,7 +31,10 @@
         xAxis: [
             {
                 type: 'category',
-                data: ['张家口', '承德', '秦皇岛', '廊坊', '衡水', '沧州', '保定', '邯郸', '唐山', '邢台', '石家庄']
+                data: ['张家口', '\n承德', '秦皇岛', '\n廊坊', '衡水', '\n沧州', '保定', '\n邯郸', '唐山', '\n邢台', '石家庄'],
+                axisLabel: {
+                    interval: 0
+                }
             }
         ],
         yAxis: [
@@ -56,28 +59,36 @@
     myChart.setOption(option);
 }();
 
-
 ~function () {
     var myChart = echarts.init(ET2);
     var option = {
         title: {
             text: '空气质量中各污染物质含量',
             subtext: '石家庄2018年',
-            x: 'center'
+            x: 'center',
+            textStyle: {
+                fontSize: 14
+            }
         },
         tooltip: {
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
-        legend: {
-            orient: 'vertical',
-            x: 'left',
-            data: ['PM2.5', 'PM10', 'SO2', 'CO', 'NO2']
-        },
         toolbox: {
             show: true,
             feature: {
-                magicType: {show: true, type: ['line', 'bar']},
+                magicType: {
+                    show: true,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '25%',
+                            width: '50%',
+                            funnelAlign: 'left',
+                            max: 1200
+                        }
+                    }
+                }
             }
         },
         restore: {show: true},
@@ -102,19 +113,18 @@
     myChart.setOption(option);
 }();
 
-
 ~function () {
     var myChart = echarts.init(ET3);
     var option = {
         title: {
             text: '河北省各城市综合指数同比改善幅度',
-            subtext: '2018'
+            subtext: '2018',
+            textStyle: {
+                fontSize: 14
+            }
         },
         tooltip: {
             trigger: 'axis'
-        },
-        legend: {
-            data: ['综合指数同比改善增幅']
         },
         toolbox: {
             show: true,
@@ -127,7 +137,10 @@
             {
                 type: 'category',
                 boundaryGap: false,
-                data: ['保定', '廊坊', '石家庄', '秦皇岛', '唐山', '邯郸', '衡水', '沧州', '邢台', '张家口', '承德',]
+                data: ['保定', '\n廊坊', '石家庄', '\n秦皇岛', '唐山', '\n邯郸', '衡水', '\n沧州', '邢台', '\n张家口', '承德'],
+                axisLabel: {
+                    interval: 0
+                }
             }
         ],
         yAxis: [
@@ -155,19 +168,18 @@
     myChart.setOption(option);
 }();
 
-
 ~function () {
     var myChart = echarts.init(ET4);
     var option = {
         title: {
             text: '河北省各城市PM10浓度',
-            subtext: '2018'
+            subtext: '2018',
+            textStyle: {
+                fontSize: 14
+            }
         },
         tooltip: {
             trigger: 'axis'
-        },
-        legend: {
-            data: ['PM10浓度']
         },
         toolbox: {
             show: true,
@@ -179,7 +191,10 @@
         xAxis: [
             {
                 type: 'category',
-                data: ['邯郸', '石家庄', '邢台', '保定', '唐山', '沧州', '衡水', '廊坊', '秦皇岛', '承德', '张家口',]
+                data: ['邯郸', '\n石家庄', '邢台', '\n保定', '唐山', '\n沧州', '衡水', '\n廊坊', '秦皇岛', '\n承德', '张家口'],
+                axisLabel: {
+                    interval: 0
+                }
             }
         ],
         yAxis: [
@@ -205,19 +220,22 @@
     myChart.setOption(option);
 }();
 
-
 ~function () {
     var myChart = echarts.init(ET5);
     var option = {
         title: {
             text: '石家庄空气中各物质含量',
-            subtext: '2018年'
+            subtext: '2018年',
+            textStyle: {
+                fontSize: 14
+            }
         },
         tooltip: {
             trigger: 'axis'
         },
         legend: {
-            data: ['PM10', 'PM2.5']
+            data: ['PM10', 'PM2.5'],
+            y: 'bottom'
         },
         toolbox: {
             show: true,
@@ -229,7 +247,10 @@
         xAxis: [
             {
                 type: 'category',
-                data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月']
+                data: ['一月', '\n二月', '三月', '\n四月', '五月', '\n六月', '七月', '\n八月', '九月'],
+                axisLabel: {
+                    interval: 0
+                }
             }
         ],
         yAxis: [
@@ -257,7 +278,6 @@
             }
         ]
     };
-
     myChart.setOption(option);
 }();
 
