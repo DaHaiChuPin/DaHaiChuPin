@@ -1,0 +1,78 @@
+html, body {
+    color: black;
+    font-size: 20px;
+}
+
+.articleBox {
+    margin: 0 auto;
+    width: 640px;
+}
+
+.headerBox {
+    margin: 20px 0;
+}
+
+.headerBox h1 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.headerBox div {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.headerBox div span:nth-of-type(1) {
+    color: #576B95;
+}
+
+.headerBox div span:nth-of-type(2) {
+    color: #AAA;
+    margin-left: 10px;
+}
+
+.mainBox {
+}
+
+.mainBox p {
+    margin-top: 20px;
+    text-indent: 40px;
+    line-height: 30px;
+}
+
+.mainBox h2 {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.mainBox img {
+    margin: 10px 0;
+    width: 100%;
+}
+.mainBox .echarts {
+    margin: 10px auto;
+    height: 400px;
+}
+
+.mainBox img.special{
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+}
+@media all and (max-width:640px){
+    .articleBox{width:100%;
+    padding:0 10px;
+    box-sizing: border-box;}
+}
+@media all and (max-width: 640px) {
+    .articleBox {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .mainbox.echarts{
+        height:200px;
+    }
+}
+
+
