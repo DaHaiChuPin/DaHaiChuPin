@@ -1,0 +1,36 @@
+html,body
+
+font
+.articlebox{
+    margin:0 auto;
+    width:640px;
+}
+.headerbox{
+    margin:20px auto;
+
+
+}
+.headerbox h1{
+    font-size: 18px;
+line-height: 40px;
+}
+.headerbox div span:nth-of-type(1) {
+    line-height: 30px;
+    color: blue;
+}
+.headerbox div span:nth-of-type(2) {
+    line-height: 30px;
+    color: grAY;
+}
+
+.mainbox p {
+    margin-bottom: 10px;
+    text-indent: 20px;
+    line-height: 30px;
+}
+.mainbox img {
+    width: 100%;
+    marign:10px 0
+}
+.
+

@@ -1,84 +1,66 @@
 html, body {
-    color: black;
-    font-size: 20px;
+    font-size: 14px;
 }
 
-.articleBox {
+.articlebox {
     margin: 0 auto;
     width: 640px;
 }
 
-.headerBox {
-    margin: 20px 0;
+.headerbox {
+    margin: 20px auto;
+    padding: 0 10px;
+
 }
 
-.headerBox h1 {
-    font-size: 25px;
+.headerbox h1 {
+    font-size: 18px;
     line-height: 40px;
 }
 
-.headerBox div {
-    font-size: 13px;
+.headerbox div span:nth-of-type(1) {
+    line-height: 30px;
+    color: blue;
+}
+
+.headerbox div span:nth-of-type(2) {
+    line-height: 30px;
+    color: grAY;
+}
+
+.mainbox p {
+    margin-top: 10px;
+    text-indent: 20px;
     line-height: 30px;
 }
 
-.headerBox div span:nth-of-type(1) {
-    color: #576B95;
+.mainbox h3 {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-.headerBox div span:nth-of-type(2) {
-    color: #AAA;
-    margin-left: 10px;
-}
-
-.mainBox {
-}
-
-.mainBox p {
-    margin-top: 20px;
-    text-indent: 40px;
-    line-height: 30px;
-}
-
-.mainBox h2 {
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.mainBox img {
-    margin: 10px 0;
-    width: 100%;
-}
-
-.mainBox .echarts {
+.mainbox .echarts {
     margin: 10px auto;
     height: 400px;
 }
 
-.mainBox img.special {
-    display: block;
-    margin: 10px auto;
-    width: 30%;
+.mainbox img {
+    width: 100%;
+    margin: 10px 0;
 }
 
 @media all and (max-width: 640px) {
-    .articleBox {
-        width: 100%;
-        padding: 0 10px;
+    .articlebox {
         box-sizing: border-box;
-    }
-}
-
-@media all and (max-width: 640px) {
-    .articleBox {
-        width: 100%;
         padding: 0 10px;
-        box-sizing: border-box;
+        width: 100%;
     }
 
-    .mainBox .echarts {
+    .mainbox .echarts {
+        margin: 10px auto;
         height: 260px;
     }
 }
 
+.
 
